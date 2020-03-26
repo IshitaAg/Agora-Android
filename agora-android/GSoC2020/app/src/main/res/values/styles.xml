@@ -8,4 +8,20 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="edit_text_form">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/rounded_rectangle_50dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="form_field_heading">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="android:textColor">@color/colorDarkerGrey</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
 </resources>

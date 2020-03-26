@@ -85,38 +85,55 @@
         app:layout_constraintStart_toStartOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-    <EditText
-        android:id="@+id/email_edit_text"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="64dp"
         android:layout_marginEnd="32dp"
-        android:backgroundTint="@color/colorDarkerGrey"
-        android:elevation="2dp"
-        android:drawablePadding="8dp"
-        android:ems="10"
-        android:drawableEnd="@drawable/ic_email"
-        android:inputType="textEmailAddress"
+        app:boxStrokeColor="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:elevation="2dp"
         app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
 
-    <EditText
-        android:id="@+id/passsword_edit_text"
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:drawableEnd="@drawable/ic_email"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorDarkerGrey"
+            android:drawablePadding="8dp"
+            android:elevation="2dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:backgroundTint="@color/colorDarkerGrey"
+        android:layout_marginTop="32dp"
         android:elevation="2dp"
-        android:ems="10"
-        android:drawableEnd="@drawable/ic_password"
-        android:drawablePadding="8dp"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="@+id/email_edit_text"
-        app:layout_constraintStart_toStartOf="@+id/email_edit_text"
-        app:layout_constraintTop_toBottomOf="@+id/email_edit_text" />
+        app:layout_constraintEnd_toEndOf="@+id/login_email"
+        app:layout_constraintStart_toStartOf="@+id/login_email"
+        app:layout_constraintTop_toBottomOf="@+id/login_email"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorYellow"
+        >
 
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_password"
+            android:backgroundTint="@color/colorDarkerGrey"
+            android:drawablePadding="8dp"
+            android:elevation="2dp"
+            android:ems="10"
+            android:inputType="textPassword"
+             />
+    </com.google.android.material.textfield.TextInputLayout>
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
@@ -127,10 +144,10 @@
         android:text="@string/e_mail_address"
         android:textColor="@color/colorLighterGrey"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/email_edit_text"
-        app:layout_constraintEnd_toEndOf="@+id/email_edit_text"
+        app:layout_constraintBottom_toTopOf="@+id/login_email"
+        app:layout_constraintEnd_toEndOf="@+id/login_email"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/email_edit_text" />
+        app:layout_constraintStart_toStartOf="@+id/login_email" />
 
     <TextView
         android:id="@+id/textView7"
@@ -142,10 +159,10 @@
         android:text="@string/password"
         android:textColor="@color/colorLighterGrey"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/passsword_edit_text"
-        app:layout_constraintEnd_toEndOf="@+id/passsword_edit_text"
+        app:layout_constraintBottom_toTopOf="@+id/login_password"
+        app:layout_constraintEnd_toEndOf="@+id/login_password"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/passsword_edit_text" />
+        app:layout_constraintStart_toStartOf="@+id/login_password" />
 
     <TextView
         android:id="@+id/textView8"
@@ -157,10 +174,10 @@
         android:text="@string/forgot_password"
         android:textColor="@color/colorTextYellow"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="@+id/passsword_edit_text"
+        app:layout_constraintEnd_toEndOf="@+id/login_password"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/passsword_edit_text"
-        app:layout_constraintTop_toBottomOf="@+id/passsword_edit_text" />
+        app:layout_constraintStart_toStartOf="@+id/login_password"
+        app:layout_constraintTop_toBottomOf="@+id/login_password" />
 
     <TextView
         android:id="@+id/loginBtn"
@@ -221,7 +238,7 @@
         android:layout_marginStart="16dp"
         android:background="@color/colorShadow"
         app:layout_constraintBottom_toBottomOf="@id/textView10"
-        app:layout_constraintEnd_toEndOf="@+id/passsword_edit_text"
+        app:layout_constraintEnd_toEndOf="@+id/login_password"
         app:layout_constraintStart_toEndOf="@+id/textView10"
         app:layout_constraintTop_toTopOf="@id/textView10"
         tools:elevation="2dp" />
@@ -233,7 +250,7 @@
         android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="@id/textView10"
         app:layout_constraintEnd_toStartOf="@+id/textView10"
-        app:layout_constraintStart_toStartOf="@+id/passsword_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/login_password"
         app:layout_constraintTop_toTopOf="@+id/textView10"
         tools:elevation="2dp" />
 

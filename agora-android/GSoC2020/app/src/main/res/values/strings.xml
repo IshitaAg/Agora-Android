@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">GSoC 2020</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="hello">Hello</string>
+    <string name="e_mail_address">E-mail Address</string>
+    <string name="please_login_to_your_account">Please login to your account</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">LOGIN</string>
+    <string name="or">Or</string>
 </resources>

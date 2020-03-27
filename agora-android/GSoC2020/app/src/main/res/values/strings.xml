@@ -13,4 +13,7 @@
     <string name="username">Username</string>
     <string name="full_name">Full Name</string>
     <string name="dashboard">Dashboard</string>
+    <string name="sample_election_name">Vidhan Sabha Elections</string>
+    <string name="sample_start_date">From: 15 April 2020</string>
+    <string name="sample_end_date">To: 20 April 2020</string>
 </resources>

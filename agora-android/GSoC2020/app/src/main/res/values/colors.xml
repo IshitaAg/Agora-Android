@@ -10,4 +10,7 @@
     <color name="colorTextYellow">#FFCD28</color>
     <color name="colorDarkerGrey">#A5A4A4</color>
     <color name="colorLighterGrey">#BCBABA</color>
+    <color name="colorOrange">#F99505</color>
+    <color name="colorGreen">#22B267</color>
+    <color name="colorRed">#F93605</color>
 </resources>

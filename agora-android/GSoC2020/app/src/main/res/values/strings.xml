@@ -33,4 +33,6 @@
     <string name="only_to_me_visibility">Visible only to me</string>
     <string name="everyone_with_access_visibility">Visible to everyone with access</string>
     <string name="visibility_of_voters_list">Visibility of voters list</string>
+    <string name="sample_initial">I</string>
+    <string name="sample_name">Ishita Aggarwal</string>
 </resources>

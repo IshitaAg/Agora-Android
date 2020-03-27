@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="match_parent"
+        android:layout_height="281dp"
+        android:background="@color/colorYellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profile_initial_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/colorDarkerGreen"
+        android:fontFamily="@font/open_sans_bold"
+        android:gravity="center"
+        android:text="@string/sample_initial"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view9"
+        app:layout_constraintEnd_toEndOf="@+id/view9"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/view9"
+        app:layout_constraintTop_toTopOf="@+id/view9"
+        app:layout_constraintVertical_bias="0.287" />
+
+    <TextView
+        android:id="@+id/profile_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/sample_name"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/profile_initial_name"
+        app:layout_constraintStart_toStartOf="@+id/profile_initial_name"
+        app:layout_constraintTop_toBottomOf="@+id/profile_initial_name" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="abc@gmail.com"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/profile_username"
+        app:layout_constraintStart_toStartOf="@+id/profile_username"
+        app:layout_constraintTop_toBottomOf="@+id/profile_username" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_left_arrow" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:srcCompat="@drawable/ic_logout" />
+
+    <TextView
+        android:id="@+id/profile_update_btn"
+        style="@style/profile_features_style"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Update Profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view9" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_update_btn"
+        app:layout_constraintEnd_toEndOf="@+id/profile_update_btn"
+        app:layout_constraintTop_toTopOf="@+id/profile_update_btn"
+        app:srcCompat="@drawable/go" />
+
+    <TextView
+        android:id="@+id/change_password_btn"
+        style="@style/profile_features_style"
+        android:layout_marginTop="16dp"
+        android:text="Change Password"
+        app:layout_constraintEnd_toEndOf="@+id/profile_update_btn"
+        app:layout_constraintStart_toStartOf="@+id/profile_update_btn"
+        app:layout_constraintTop_toBottomOf="@+id/profile_update_btn" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/change_password_btn"
+        app:layout_constraintEnd_toEndOf="@+id/change_password_btn"
+        app:layout_constraintTop_toTopOf="@+id/change_password_btn"
+        app:srcCompat="@drawable/go" />
+
+    <TextView
+        android:id="@+id/share_btn"
+        style="@style/profile_features_style"
+        android:layout_marginTop="16dp"
+        android:text="Share with Others"
+        app:layout_constraintEnd_toEndOf="@+id/change_password_btn"
+        app:layout_constraintStart_toStartOf="@+id/change_password_btn"
+        app:layout_constraintTop_toBottomOf="@+id/change_password_btn" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/share_btn"
+        app:layout_constraintEnd_toEndOf="@+id/share_btn"
+        app:layout_constraintTop_toTopOf="@+id/share_btn"
+        app:srcCompat="@drawable/go" />
+
+    <TextView
+        android:id="@+id/contact_btn"
+        style="@style/profile_features_style"
+        android:layout_marginTop="16dp"
+        android:text="Contact Us"
+        app:layout_constraintEnd_toEndOf="@+id/share_btn"
+        app:layout_constraintStart_toStartOf="@+id/share_btn"
+        app:layout_constraintTop_toBottomOf="@+id/share_btn" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/contact_btn"
+        app:layout_constraintEnd_toEndOf="@+id/contact_btn"
+        app:layout_constraintTop_toTopOf="@+id/contact_btn"
+        app:srcCompat="@drawable/go" />
+
+    <TextView
+        android:id="@+id/about_btn"
+        style="@style/profile_features_style"
+        android:layout_marginTop="16dp"
+        android:text="About Agora"
+        app:layout_constraintEnd_toEndOf="@+id/contact_btn"
+        app:layout_constraintStart_toStartOf="@+id/contact_btn"
+        app:layout_constraintTop_toBottomOf="@+id/contact_btn" />
+
+    <TextView
+        android:id="@+id/report_btn"
+        style="@style/profile_features_style"
+        android:layout_marginTop="16dp"
+        android:text="Report a bug"
+        app:layout_constraintEnd_toEndOf="@+id/about_btn"
+        app:layout_constraintStart_toStartOf="@+id/about_btn"
+        app:layout_constraintTop_toBottomOf="@+id/about_btn" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/about_btn"
+        app:layout_constraintEnd_toEndOf="@+id/about_btn"
+        app:layout_constraintTop_toTopOf="@+id/about_btn"
+        app:srcCompat="@drawable/go" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/report_btn"
+        app:layout_constraintEnd_toEndOf="@+id/report_btn"
+        app:layout_constraintTop_toTopOf="@+id/report_btn"
+        app:srcCompat="@drawable/go" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

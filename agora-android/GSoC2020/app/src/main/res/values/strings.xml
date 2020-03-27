@@ -19,4 +19,8 @@
     <string name="description">Description</string>
     <string name="sample_election_description">Every adult citizen of India can vote only in their constituency. Candidates who win the State Legislative Assemblies elections are called \'Member of Legislative Assembly\' (MLA) and hold their seats for five years or until the body is dissolved by the Governor.</string>
     <string name="sample_candidate_name">Arvind Kejriwal</string>
+    <string name="details">D\nE\nT\nA\nI\nL\nS</string>
+    <string name="election_name">Election Name</string>
+    <string name="start_date">Start date</string>
+    <string name="end_date">End Date</string>
 </resources>

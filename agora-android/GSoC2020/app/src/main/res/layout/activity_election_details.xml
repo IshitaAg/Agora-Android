@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/election_details_background">
@@ -123,4 +126,104 @@
         app:layout_constraintEnd_toEndOf="@+id/status_elections"
         app:layout_constraintStart_toEndOf="@id/election_start_date"
         app:layout_constraintTop_toTopOf="@+id/election_start_date" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorYellow"
+        android:fontFamily="@font/open_sans_bold"
+        android:gravity="center"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:text="Candidates"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/delete_election_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/colorRed"
+        android:clickable="true"
+        app:borderWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/invite_voters_btn"
+        app:srcCompat="@drawable/ic_cancel" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/invite_voters_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/colorYellow"
+        android:clickable="true"
+        app:borderWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/delete_election_btn"
+        app:layout_constraintEnd_toStartOf="@+id/delete_election_btn"
+        app:layout_constraintStart_toEndOf="@id/ballot_btn"
+        app:layout_constraintTop_toTopOf="@+id/delete_election_btn"
+        app:srcCompat="@drawable/ic_invitation" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/ballot_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/colorYellow"
+        android:clickable="true"
+        app:borderWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/invite_voters_btn"
+        app:layout_constraintEnd_toStartOf="@+id/invite_voters_btn"
+        app:layout_constraintStart_toEndOf="@id/voters_button"
+        app:layout_constraintTop_toTopOf="@+id/invite_voters_btn"
+        app:srcCompat="@drawable/ic_politics" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/voters_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/colorYellow"
+        android:clickable="true"
+        app:borderWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ballot_btn"
+        app:layout_constraintEnd_toStartOf="@+id/ballot_btn"
+        app:layout_constraintStart_toEndOf="@id/results_btn"
+        app:layout_constraintTop_toTopOf="@+id/ballot_btn"
+        app:srcCompat="@drawable/ic_vote" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/results_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/colorYellow"
+        android:clickable="true"
+        app:borderWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/voters_button"
+        app:layout_constraintEnd_toStartOf="@+id/voters_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/voters_button"
+        app:srcCompat="@drawable/ic_report" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/candidates"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/delete_election_btn"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        tools:layout_editor_absoluteX="1dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

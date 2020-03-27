@@ -23,4 +23,6 @@
     <string name="election_name">Election Name</string>
     <string name="start_date">Start date</string>
     <string name="end_date">End Date</string>
+    <string name="candidate_name">Candidate Name</string>
+    <string name="candidates">Candidates</string>
 </resources>

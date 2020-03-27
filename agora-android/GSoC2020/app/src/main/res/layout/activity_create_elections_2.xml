@@ -40,8 +40,7 @@
         app:layout_constraintEnd_toStartOf="@id/add_candidate_btn"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toEndOf="@+id/textView20"
-        app:layout_constraintTop_toTopOf="@+id/imageView5"
-        tools:layout_constraintEnd_toEndOf="@id/floatingActionButton3" />
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
 
     <TextView
         android:id="@+id/textView26"
@@ -49,7 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
-        android:text="Candidate Name"
+        android:text="@string/candidate_name"
         android:textColor="@color/colorBlack"
         app:layout_constraintBottom_toTopOf="@+id/create_candidate_name"
         app:layout_constraintEnd_toEndOf="@+id/create_candidate_name"
@@ -71,7 +70,7 @@
         app:srcCompat="@drawable/ic_new" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton4"
+        android:id="@+id/create_next_btn_2"
         style="@style/next_btn_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -82,32 +81,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_right_arrow" />
 
-    <View
-        android:id="@+id/view7"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="64dp"
-        android:background="@drawable/rounded_rectangle_11dp"
-        android:elevation="1dp"
-        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@id/create_candidate_name"
-        app:layout_constraintTop_toBottomOf="@+id/create_candidate_name"
-        app:layout_constraintVertical_bias="0.0" />
-
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/view7"
-        app:layout_constraintEnd_toEndOf="@+id/view7"
-        app:layout_constraintStart_toStartOf="@+id/view7"
-        app:layout_constraintTop_toTopOf="@+id/view7"
-        app:layout_constraintVertical_bias="0.395" />
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/rounded_rectangle_11dp"
+        android:clipToPadding="false"
+        android:elevation="1dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/create_next_btn_2"
+        app:layout_constraintEnd_toEndOf="@id/add_candidate_btn"
+        app:layout_constraintStart_toStartOf="@id/create_candidate_name"
+        app:layout_constraintTop_toBottomOf="@+id/create_candidate_name"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/adapter_create_election_candidates" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

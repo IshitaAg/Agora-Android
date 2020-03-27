@@ -26,4 +26,11 @@
     <string name="candidate_name">Candidate Name</string>
     <string name="candidates">Candidates</string>
     <string name="no_algorithm_selected_yet">No algorithm selected yet!</string>
+    <string name="invite_voters">Invite Voters</string>
+    <string name="get_real_time_results">Get real time results</string>
+    <string name="how_secret_are_your_ballots">How secret are your ballots?</string>
+    <string name="secret_visibility">completely secret and not visible to anyone</string>
+    <string name="only_to_me_visibility">Visible only to me</string>
+    <string name="everyone_with_access_visibility">Visible to everyone with access</string>
+    <string name="visibility_of_voters_list">Visibility of voters list</string>
 </resources>

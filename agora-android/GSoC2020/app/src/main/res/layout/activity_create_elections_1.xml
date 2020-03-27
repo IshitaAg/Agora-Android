@@ -135,17 +135,12 @@
         app:layout_constraintStart_toStartOf="@+id/create_end_date" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="24dp"
-        android:backgroundTint="@color/colorYellow"
-        android:clickable="true"
+        android:id="@+id/create_next_btn_1"
         app:borderWidth="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_right_arrow" />
+        app:srcCompat="@drawable/ic_right_arrow"
+        style="@style/next_btn_style" />
 
     <ImageView
         android:id="@+id/calender_btn_start"

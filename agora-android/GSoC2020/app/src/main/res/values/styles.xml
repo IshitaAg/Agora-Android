@@ -34,4 +34,14 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="next_btn_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:layout_marginBottom">24dp</item>
+        <item name="android:backgroundTint">@color/colorYellow</item>
+        <item name="android:clickable">true</item>
+        <item name="borderWidth">0dp</item>
+    </style>
+
 </resources>

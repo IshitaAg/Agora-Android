@@ -25,4 +25,5 @@
     <string name="end_date">End Date</string>
     <string name="candidate_name">Candidate Name</string>
     <string name="candidates">Candidates</string>
+    <string name="no_algorithm_selected_yet">No algorithm selected yet!</string>
 </resources>

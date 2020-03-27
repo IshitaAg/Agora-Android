@@ -152,14 +152,11 @@
 
             <RelativeLayout
                 android:id="@+id/security_drop_down"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
-                android:background="@drawable/rounded_rectangle_50dp"
-                android:padding="16dp"
                 app:layout_constraintEnd_toEndOf="@+id/signup_password"
                 app:layout_constraintStart_toStartOf="@+id/signup_password"
-                app:layout_constraintTop_toBottomOf="@id/signup_password">
+                app:layout_constraintTop_toBottomOf="@id/signup_password"
+                style="@style/spinner_style">
 
                 <androidx.appcompat.widget.AppCompatSpinner
                     android:id="@+id/sign_up_security_question"

@@ -28,7 +28,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.56" />
+                app:layout_constraintGuide_begin="410dp" />
 
             <TextView
                 android:id="@+id/textView16"
@@ -78,6 +78,76 @@
                 app:borderWidth="0dp"
                 app:layout_constraintBottom_toBottomOf="@+id/home_elections_recycler"
                 app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/home_pending"
+                style="@style/election_status_style"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="8dp"
+                android:text="PENDING"
+                app:layout_constraintBottom_toBottomOf="@+id/view2"
+                app:layout_constraintEnd_toStartOf="@id/home_active"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/home_active"
+                style="@style/election_status_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="2dp"
+                android:text="ACTIVE"
+                app:layout_constraintBottom_toBottomOf="@+id/home_pending"
+                app:layout_constraintEnd_toStartOf="@+id/home_finished"
+                app:layout_constraintStart_toEndOf="@+id/home_pending"
+                app:layout_constraintTop_toTopOf="@+id/home_pending" />
+
+            <TextView
+                android:id="@+id/home_finished"
+                style="@style/election_status_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:elevation="2dp"
+                android:text="FINISHED"
+                app:layout_constraintBottom_toBottomOf="@+id/home_active"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/home_active"
+                app:layout_constraintTop_toTopOf="@+id/home_active" />
+
+            <View
+                android:id="@+id/view16"
+                android:layout_width="0dp"
+                android:layout_height="4dp"
+                android:background="@color/colorWhite"
+                app:layout_constraintBottom_toTopOf="@+id/guideline"
+                app:layout_constraintEnd_toEndOf="@+id/home_pending"
+                app:layout_constraintStart_toStartOf="@+id/home_pending"
+                app:layout_constraintTop_toBottomOf="@+id/home_pending"
+                app:layout_constraintVertical_bias="1.0"
+                tools:elevation="2dp" />
+
+            <View
+                android:id="@+id/view17"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="6dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toBottomOf="@+id/view2"
+                app:layout_constraintEnd_toEndOf="@+id/home_active"
+                app:layout_constraintStart_toStartOf="@+id/home_active"
+                app:layout_constraintTop_toBottomOf="@+id/home_active" />
+
+            <View
+                android:id="@+id/view18"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="6dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toTopOf="@+id/guideline"
+                app:layout_constraintEnd_toEndOf="@+id/home_finished"
+                app:layout_constraintStart_toStartOf="@+id/home_finished"
+                app:layout_constraintTop_toBottomOf="@+id/home_finished" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>

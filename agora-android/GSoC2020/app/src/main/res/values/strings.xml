@@ -35,4 +35,6 @@
     <string name="visibility_of_voters_list">Visibility of voters list</string>
     <string name="sample_initial">I</string>
     <string name="sample_name">Ishita Aggarwal</string>
+    <string name="report_a_bug_desc">Feel free to raise an issue. Our team will work to solve the problem as as possible</string>
+    <string name="report_a_bug">Report a bug</string>
 </resources>

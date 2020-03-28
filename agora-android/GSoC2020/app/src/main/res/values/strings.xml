@@ -48,4 +48,6 @@
     <string name="otp">OTP</string>
     <string name="caste_your_vote">Caste Your Vote</string>
     <string name="vote">Vote</string>
+    <string name="total_elections">Total Elections</string>
+    <string name="sample_election_no">60</string>
 </resources>

@@ -37,4 +37,7 @@
     <string name="sample_name">Ishita Aggarwal</string>
     <string name="report_a_bug_desc">Feel free to raise an issue. Our team will work to solve the problem as as possible</string>
     <string name="report_a_bug">Report a bug</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="update">Update</string>
 </resources>

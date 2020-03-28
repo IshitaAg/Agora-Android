@@ -97,4 +97,23 @@
         <item name="android:fontFamily">@font/open_sans_semibold</item>
     </style>
 
+    <style name="update_btn_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">80dp</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:layout_marginEnd">80dp</item>
+        <item name="android:layout_marginBottom">24dp</item>
+        <item name="android:background">@drawable/rounded_rectangle_50dp</item>
+        <item name="android:backgroundTint">@color/colorYellow</item>
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+        <item name="android:paddingStart">64dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingEnd">64dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
 </resources>

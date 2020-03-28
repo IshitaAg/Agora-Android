@@ -116,4 +116,27 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="details_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:elevation">1dp</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorDarkerGrey</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="date_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:elevation">1dp</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
 </resources>

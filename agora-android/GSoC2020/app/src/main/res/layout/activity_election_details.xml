@@ -78,37 +78,22 @@
 
     <TextView
         android:id="@+id/election_description"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:elevation="1dp"
-        android:fontFamily="@font/open_sans"
         android:text="@string/sample_election_description"
-        android:textAlignment="textStart"
-        android:textAllCaps="false"
-        android:textColor="@color/colorDarkerGrey"
-        android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/election_start_date"
         app:layout_constraintEnd_toEndOf="@+id/status_elections"
         app:layout_constraintStart_toStartOf="@+id/textView19"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+        app:layout_constraintTop_toBottomOf="@+id/textView19"
+        style="@style/details_style" />
 
     <TextView
         android:id="@+id/election_start_date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:elevation="1dp"
-        android:fontFamily="@font/open_sans"
         android:text="@string/sample_start_date"
-        android:textColor="@color/colorBlack"
-        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/view5"
         app:layout_constraintEnd_toStartOf="@+id/election_end_date"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="@+id/election_description"
-        app:layout_constraintTop_toBottomOf="@id/election_description" />
+        app:layout_constraintTop_toBottomOf="@id/election_description"
+        style="@style/date_style" />
 
     <TextView
         android:id="@+id/election_end_date"

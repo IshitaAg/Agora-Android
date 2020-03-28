@@ -58,7 +58,7 @@
         android:layout_marginTop="24dp"
         android:elevation="1dp"
         android:fontFamily="@font/open_sans_bold"
-        android:text="Two Factor Authentication"
+        android:text="@string/two_factor_authentication"
         android:textColor="@color/colorBlack"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/view12"
@@ -72,14 +72,14 @@
         android:layout_marginTop="16dp"
         android:elevation="1dp"
         android:fontFamily="@font/open_sans"
-        android:text="Please check your mailbox for otp"
+        android:text="@string/please_check_your_mailbox_for_otp"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/textView48"
         app:layout_constraintStart_toStartOf="@+id/textView48"
         app:layout_constraintTop_toBottomOf="@+id/textView48" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/two_factor_otp"
         style="@style/edit_text_style_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -99,12 +99,12 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
         android:elevation="1dp"
-        android:text="OTP"
+        android:text="@string/otp"
         android:textColor="@color/colorBlack"
-        app:layout_constraintBottom_toTopOf="@+id/editText6"
-        app:layout_constraintEnd_toEndOf="@+id/editText6"
+        app:layout_constraintBottom_toTopOf="@+id/two_factor_otp"
+        app:layout_constraintEnd_toEndOf="@+id/two_factor_otp"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editText6" />
+        app:layout_constraintStart_toStartOf="@+id/two_factor_otp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/two_factor_next_btn"

@@ -43,4 +43,9 @@
     <string name="about_agora_desc">Agora is a voting platform where users can create elections and invite friends to cast their votes. It supports a wide range of voting algorithms .</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="forget_pass_desc">Please enter your username and we will send you password reset link</string>
+    <string name="two_factor_authentication">Two Factor Authentication</string>
+    <string name="please_check_your_mailbox_for_otp">Please check your mailbox for otp</string>
+    <string name="otp">OTP</string>
+    <string name="caste_your_vote">Caste Your Vote</string>
+    <string name="vote">Vote</string>
 </resources>

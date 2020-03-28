@@ -149,4 +149,16 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="result_text_style">
+        <item name="android:background">@drawable/rounded_rectangle_50dp</item>
+        <item name="android:backgroundTint">@color/colorDarkerGreen</item>
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
 </resources>

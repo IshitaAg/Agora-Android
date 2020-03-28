@@ -41,4 +41,6 @@
     <string name="last_name">Last Name</string>
     <string name="update">Update</string>
     <string name="about_agora_desc">Agora is a voting platform where users can create elections and invite friends to cast their votes. It supports a wide range of voting algorithms .</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="forget_pass_desc">Please enter your username and we will send you password reset link</string>
 </resources>

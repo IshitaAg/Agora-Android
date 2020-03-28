@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_rectangle_11dp">
+
+    <EditText
+        android:id="@+id/invite_voter_name"
+        style="@style/edit_text_style_2"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+    <TextView
+        android:id="@+id/textView53"
+        style="@style/form_field_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Name of the voter"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintBottom_toTopOf="@+id/invite_voter_name"
+        app:layout_constraintEnd_toEndOf="@+id/invite_voter_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/invite_voter_name" />
+
+    <EditText
+        android:id="@+id/invite_e_mail"
+        style="@style/edit_text_style_2"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/invite_voter_name"
+        app:layout_constraintStart_toStartOf="@+id/invite_voter_name"
+        app:layout_constraintTop_toBottomOf="@+id/invite_voter_name" />
+
+    <TextView
+        android:id="@+id/textView54"
+        style="@style/form_field_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/e_mail_address"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintBottom_toTopOf="@+id/invite_e_mail"
+        app:layout_constraintEnd_toEndOf="@+id/invite_e_mail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/invite_e_mail" />
+
+    <TextView
+        android:id="@+id/invite_add_btn"
+        style="@style/update_btn_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Add voter"
+        app:layout_constraintEnd_toEndOf="@+id/invite_e_mail"
+        app:layout_constraintStart_toStartOf="@+id/invite_e_mail"
+        app:layout_constraintTop_toBottomOf="@+id/invite_e_mail" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="Invite Voters"
+        android:textColor="@color/colorTextYellow"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/invite_btn"
+        style="@style/update_btn_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/colorDarkerGreen"
+        android:text="Invite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/invite_voters_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/invite_btn"
+        app:layout_constraintTop_toBottomOf="@+id/invite_add_btn"
+        tools:layout_editor_absoluteX="1dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/open_sans_bold"
-        android:text="Ballot"
+        android:text="@string/ballot"
         android:textColor="@color/colorTextYellow"
         android:textSize="24sp"
         android:textStyle="bold"

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/rounded_rectangle_11dp">
 
-    <EditText
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/invite_voter_name"
         style="@style/edit_text_style_2"
         android:layout_marginStart="24dp"
@@ -24,14 +24,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
-        android:text="Name of the voter"
+        android:text="@string/name_of_the_voter"
         android:textColor="@color/colorBlack"
         app:layout_constraintBottom_toTopOf="@+id/invite_voter_name"
         app:layout_constraintEnd_toEndOf="@+id/invite_voter_name"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/invite_voter_name" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/invite_e_mail"
         style="@style/edit_text_style_2"
         android:ems="10"
@@ -59,7 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Add voter"
+        android:text="@string/add_voter"
         app:layout_constraintEnd_toEndOf="@+id/invite_e_mail"
         app:layout_constraintStart_toStartOf="@+id/invite_e_mail"
         app:layout_constraintTop_toBottomOf="@+id/invite_e_mail" />
@@ -70,7 +70,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/open_sans_bold"
-        android:text="Invite Voters"
+        android:text="@string/invite_voters"
         android:textColor="@color/colorTextYellow"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -84,7 +84,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:backgroundTint="@color/colorDarkerGreen"
-        android:text="Invite"
+        android:text="@string/invite"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

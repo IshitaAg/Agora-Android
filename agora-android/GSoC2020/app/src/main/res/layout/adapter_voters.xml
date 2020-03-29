@@ -12,7 +12,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/open_sans_semibold"
-        android:text="Ekta Aggarwal"
+        android:text="@string/sample_voter_name"
         android:textColor="@color/colorBlack"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/open_sans_semibold"
-        android:text="xyz@gmail.com"
+        android:text="@string/sample_email_voter"
         app:layout_constraintBottom_toBottomOf="@+id/textView55"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView55" />

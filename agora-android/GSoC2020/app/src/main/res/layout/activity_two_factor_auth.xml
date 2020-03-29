@@ -78,7 +78,7 @@
         app:layout_constraintStart_toStartOf="@+id/textView48"
         app:layout_constraintTop_toBottomOf="@+id/textView48" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/two_factor_otp"
         style="@style/edit_text_style_2"
         android:layout_width="wrap_content"

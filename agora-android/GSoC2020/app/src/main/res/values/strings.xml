@@ -50,4 +50,18 @@
     <string name="vote">Vote</string>
     <string name="total_elections">Total Elections</string>
     <string name="sample_election_no">60</string>
+    <string name="ballot">Ballot</string>
+    <string name="voter_list">Voter List</string>
+    <string name="sample_voting_algo">Voting Algorithm: Oklahoma</string>
+    <string name="sample_total_voters">Total Voters:100</string>
+    <string name="sample_ballot">Total Ballots: 60</string>
+    <string name="name_of_the_voter">Name of the voter</string>
+    <string name="add_voter">Add voter</string>
+    <string name="invite_voters">Invite Voters</string>
+    <string name="invite">Invite</string>
+    <string name="sample_contact_us_desc">Feel free to contact us on gitter channels and work with us on gitlab</string>
+    <string name="aossie_s_gitlab">AOSSIE\'S Gitlab</string>
+    <string name="aossie_s_gitter">AOSSIE\'S Gitter</string>
+    <string name="sample_voter_name">Ekta Aggarwal</string>
+    <string name="sample_email_voter">xyz@gmail.com</string>
 </resources>
